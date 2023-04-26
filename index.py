@@ -24,7 +24,10 @@ for name in df['Full Name']:
         last_name = name_parts[0]
     
     # Add the parsed name to the new dataframe
-    parsed_df = parsed_df.append({'First Name': first_name, 'Last Name': last_name}, ignore_index=True)
+    #DEPRECATED IN PANDA VERSION 2.0  ->    parsed_df = parsed_df.append({'First Name': first_name, 'Last Name': last_name}, ignore_index=True)
+
+    parsed_df = pd.concat([parsed_df, pd.DataFrame({'First Name': first_name, 'Last Name':last_name}, index=[0])], ignore_index=True)
+
 
 # Save the new dataframe to a new Excel sheet
 parsed_df.to_excel('output_file.xlsx', index=False)
