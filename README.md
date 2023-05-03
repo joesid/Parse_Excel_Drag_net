@@ -21,6 +21,13 @@ should be placed under a column called "First Name" in a new excel file, while t
 If there are 3 strings/name, the 1st and 2nd String/Name should be placed under "First Name" and the 3rd String/Name  will be placed under "Last Name" in the new file
 
 
+FUNCTIONS OF INDEX2.py AND INDEX3.py - 2nd May 2023
+
+This code was intended to compare two Excel sheet, with four columns, the 1st sheet has four columns | FirstName | MiddleName | LastName | Email |, the first Sheet has more names and details, the second sheet has the same number of columns, the idea was that will check if a row of the 1st sheet excluding the email column is also in the 2nd sheet, if it is, then a new excel sheet is created and the row from the first sheet (email inclusive) is placed.
+
+Note: couldn't make the code work, given the time before the actually implementation.
+
+
 NOTE !!
 
 1.  I was fraught with some errors and I was require to install the python library openpyxl
